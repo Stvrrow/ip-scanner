@@ -36,7 +36,7 @@ if [[ -z "$PREFIX" || -z "$INTERFACE" ]]; then
     exit 1
 fi
 
-#Проверка символов в PREFIX
+#Проверка формата PREFIX
 if [[ ! "$PREFIX" =~ $RE_PREFIX ]]; then
     echo "Некорректный префикс. Используйте формат ХХХ.ХХХ (например 192.168)"
     exit 1
